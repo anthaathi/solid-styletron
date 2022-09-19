@@ -1,9 +1,13 @@
 {
   "name": "@anthaathi/solid-styletron",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anthaathi/solid-styletron"
   },
   "license": "MIT",
   "scripts": {

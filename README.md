@@ -16,7 +16,6 @@ Configure the Styletron
 import type {Component} from 'solid-js';
 import {StyletronProvider, useStyletron} from '@anthaathi/solid-styletron';
 import {Client} from 'styletron-engine-atomic';
-import {} from "./useStyletron";
 
 // Configure theme object
 const THEME_OBJECT = {
@@ -40,7 +39,7 @@ function App() {
 
 // Declare custom theme
 declare module '@anthaathi/solid-styletron' {
-    export type StyletronTheme = {
+    export interface StyletronTheme {
         colorRed: string;
     }
 }
