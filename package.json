@@ -1,0 +1,51 @@
+{
+  "name": "@anthaathi/solid-styletron",
+  "private": false,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && tsc",
+    "preview": "vite preview",
+    "lint": "eslint \"src/*.{ts,tsx}\""
+  },
+  "types": "./dist/public.d.ts",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/solid-styletron.umd.cjs",
+  "module": "./dist/solid-styletron.js",
+  "exports": {
+    ".": {
+      "import": "./dist/solid-styletron.js",
+      "require": "./dist/solid-styletron.umd.cjs"
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^18.7.18",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-solid": "^0.7.3",
+    "prettier": "^2.7.1",
+    "typescript": "*",
+    "vite": "^3.1.0",
+    "vite-plugin-solid": "^2.3.3",
+    "babel-preset-solid": "^1.5.5",
+    "solid-js": "^1.5.5",
+    "styletron-engine-atomic": "^1.5.0"
+  },
+  "peerDependencies": {
+    "solid-js": "^1.5.5",
+    "styletron-engine-atomic": "^1.5.0"
+  },
+  "dependencies": {},
+  "prettier": {
+    "quoteProps": "consistent",
+    "semi": true,
+    "singleQuote": true
+  }
+}
