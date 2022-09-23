@@ -1,6 +1,6 @@
 {
   "name": "@anthaathi/solid-styletron",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "type": "module",
   "publishConfig": {
     "access": "public"
