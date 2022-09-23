@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useStyletron should  1`] = `
+<div>
+  <div>
+    <div
+      class="ae af ag ah"
+    />
+    <div
+      class="ai"
+    />
+  </div>
+  <style>
+    .ae{margin-left:12px}.af:hover{top:12px}.ag:hover{padding:12px}.ah{margin-right:12px}.ai{padding:12px}
+  </style>
+</div>
+`;

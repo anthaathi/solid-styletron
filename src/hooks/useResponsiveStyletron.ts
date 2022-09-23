@@ -22,14 +22,14 @@ export function useResponsiveStyletron(): [
 
   function css(input: ResponsiveStyleObject) {
     const returnObject: StyleObject = {};
-    const mediaQueriesKeys = Object.keys($theme.mediaQueries || {});
+    const mediaQueriesKeys = Object.keys($theme.mediaQuery || {});
 
     Object.keys(input).forEach((key) => {
       const inputElement = input[key];
 
       if (Array.isArray(inputElement)) {
         inputElement.forEach((item, index) => {
-          const mediaQuery = $theme.mediaQueries?.[mediaQueriesKeys[index]];
+          const mediaQuery = $theme.mediaQuery?.[mediaQueriesKeys[index]];
 
           if (!mediaQuery) {
             console.warn('mediaQuery not found for index', index);

@@ -4,7 +4,7 @@ import { Server } from 'styletron-engine-atomic';
 import { cleanup, render } from 'solid-testing-library';
 
 describe('useResponsiveStyletron', () => {
-  afterEach(() => cleanup);
+  afterEach(() => cleanup());
 
   it('should render the stuff', async () => {
     const client = new Server();
@@ -27,7 +27,7 @@ describe('useResponsiveStyletron', () => {
         <StyletronProvider
           client={client}
           theme={{
-            mediaQueries: { sm: '@media screen and (max-width: 1200px)' },
+            mediaQuery: { sm: '@media screen and (max-width: 1200px)' },
           }}
         >
           <Component />

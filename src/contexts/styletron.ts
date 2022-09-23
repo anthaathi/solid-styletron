@@ -5,5 +5,5 @@ export const StyletronContext = createContext<StandardEngine>();
 export const StyletronThemeContext = createContext<StyletronTheme>({});
 
 export interface StyletronTheme {
-  mediaQueries?: { [kind: string]: string };
+  mediaQuery?: { [kind: string]: string };
 }
