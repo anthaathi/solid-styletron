@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`useResponsiveStyletron should render the stuff 1`] = `
+<div>
+  <div>
+    <div
+      class="ae af"
+    />
+    <style>
+      .af{padding:12px}
+    </style>
+    <style
+      media="screen and (max-width: 1200px)"
+    >
+      .ae{margin:12px}
+    </style>
+  </div>
+</div>
+`;

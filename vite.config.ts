@@ -1,10 +1,14 @@
+import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import solidPlugin from 'vite-plugin-solid';
-import { resolve } from 'path';
 
 export default defineConfig({
   plugins: [solidPlugin()],
+  server: {
+    port: 3000,
+  },
   build: {
+    target: 'esnext',
     lib: {
       entry: resolve(__dirname, 'src/public.ts'),
       name: 'SolidStyletron',
